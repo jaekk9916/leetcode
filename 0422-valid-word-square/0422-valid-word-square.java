@@ -1,6 +1,5 @@
 class Solution {
     public boolean validWordSquare(List<String> words) {
-        boolean check = true;
         int cols = words.size();
         for(int i=0;i<words.size();i++){
 
@@ -12,6 +11,6 @@ class Solution {
                 }
             }
         }
-    return check;
+    return true;
     }
 }

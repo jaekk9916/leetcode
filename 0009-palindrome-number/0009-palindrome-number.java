@@ -5,14 +5,10 @@ class Solution {
         char[] arrStr2 = new char[str1.length()];
         
         for(int i=0;i<str1.length();i++){
-            arrStr2[i] = arrStr1[str1.length() - 1 - i];
+            if(arrStr1[i] != arrStr1[arrStr1.length-1-i])
+            return false;
         }
-
-        for(int i=0;i<arrStr1.length;i++){
-            if(arrStr1[i] != arrStr2[i]){
-                return false;
-            }
-        }
+        
         return true;
     }
 }

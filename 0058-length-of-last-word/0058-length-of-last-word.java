@@ -5,9 +5,7 @@ class Solution {
         for(int i = s.length() -1; i >= 0; i--){
             if(s.charAt(i) != ' '){
                 length++;
-            }
-            
-            if(s.charAt(i) == ' ' && length > 0){
+            } else if(length > 0){
                 break;
             }
         }

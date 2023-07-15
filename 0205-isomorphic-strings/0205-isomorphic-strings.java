@@ -6,9 +6,8 @@ class Solution {
             char original = s.charAt(i);
             char replace = t.charAt(i);
             
-            if(!mappingMap.containsKey(original) && mappingMap.containsValue(replace)) return false;
             if(!mappingMap.containsKey(original)){
-                
+                if(mappingMap.containsValue(replace)) return false;
                 mappingMap.put(original, replace);
             }
             

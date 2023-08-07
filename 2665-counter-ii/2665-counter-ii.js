@@ -6,16 +6,12 @@ var createCounter = function(init) {
     let n = init;
     
     return {
-        increment: function() { 
-            return ++n; 
-        },
-        reset: function() { 
+        increment: () => { return ++n; },
+        reset: () => {
             n = init;
             return n;
         },
-        decrement: function() {
-            return --n;
-        }    
+        decrement: () => { return --n; }
     }
 };
 

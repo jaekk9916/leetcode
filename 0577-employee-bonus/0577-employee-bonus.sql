@@ -3,5 +3,5 @@ SELECT e.name, b.bonus
 FROM employee e
 LEFT JOIN bonus b
 ON e.empId = b.empID
-WHERE b.bonus < 1000 OR b.bonus is NULL
+WHERE NVL(b.bonus, 0) < 1000
 ;
